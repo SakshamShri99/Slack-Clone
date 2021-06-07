@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "no-alert": "off",
+    "radix": "off",
+    "no-shadow": "off",
+    "no-restricted-globals": "off",
+    "consistent-return": "off",
+    "func-names": "off",
+    "no-undef": "off",
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": "warn",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+        "message": "Unexpected property on console object was called"
+      }
+    ],
+    "import/extensions": "off",
+    "react/prop-types": "off"
+  }
+}
