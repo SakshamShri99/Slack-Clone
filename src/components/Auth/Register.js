@@ -123,7 +123,7 @@ const Register = ({ history, registerToLogin }) => {
               />
             </div>
           </div>
-          {true ? (
+          {loading ? (
             <button className="ui large fluid red loading button" type="submit">
               Sign Up
             </button>
